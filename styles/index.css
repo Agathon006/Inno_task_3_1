@@ -231,7 +231,7 @@ button {
 
 .nav-section {
   padding: 10px 30px;
-  width: 220px;
+  max-width: 220px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;

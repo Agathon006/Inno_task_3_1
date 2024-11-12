@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./styles/reset/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <title>YouTube Redesign Concept</title>
+    <script src="./scripts/index.js" type="module" defer></script>
   </head>
   <body>
     <div class="global-wrapper">
       <header class="header">
         <div class="header__left-wrapper">
-          <button class="header__burger-btn"></button>
+          <button class="header__burger-btn" id="burger-btn"></button>
           <a
             href="https://www.youtube.com/"
             target="_blank"
@@ -54,7 +55,7 @@
                     />
                   </div>
                   <span
-                    class="nav-section__link-text nav-section__link-text_active"
+                    class="nav-section__link-text nav-section__link-text_active" data-hide
                   >
                     Home
                   </span>
@@ -71,7 +72,7 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_trending"
                     />
                   </div>
-                  <span class="nav-section__link-text">Trending</span>
+                  <span class="nav-section__link-text" data-hide>Trending</span>
                 </a>
               </li>
               <li class="nav-section__nav-list-item">
@@ -83,7 +84,7 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_subscriptions"
                     />
                   </div>
-                  <span class="nav-section__link-text">Subscriptions</span>
+                  <span class="nav-section__link-text" data-hide>Subscriptions</span>
                 </a>
               </li>
             </ul>
@@ -99,7 +100,7 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_library"
                     />
                   </div>
-                  <span class="nav-section__link-text">Library</span>
+                  <span class="nav-section__link-text" data-hide>Library</span>
                 </a>
               </li>
               <li class="nav-section__nav-list-item">
@@ -111,7 +112,7 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_history"
                     />
                   </div>
-                  <span class="nav-section__link-text">History</span>
+                  <span class="nav-section__link-text" data-hide>History</span>
                 </a>
               </li>
               <li class="nav-section__nav-list-item">
@@ -123,7 +124,7 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_watch-later"
                     />
                   </div>
-                  <span class="nav-section__link-text">Watch later</span>
+                  <span class="nav-section__link-text" data-hide>Watch later</span>
                 </a>
               </li>
               <li class="nav-section__nav-list-item">
@@ -135,7 +136,7 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_favourites"
                     />
                   </div>
-                  <span class="nav-section__link-text">Favourites</span>
+                  <span class="nav-section__link-text" data-hide>Favourites</span>
                 </a>
               </li>
               <li class="nav-section__nav-list-item">
@@ -147,7 +148,7 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_liked-videos"
                     />
                   </div>
-                  <span class="nav-section__link-text">Liked videos</span>
+                  <span class="nav-section__link-text" data-hide>Liked videos</span>
                 </a>
               </li>
               <li class="nav-section__nav-list-item">
@@ -159,7 +160,7 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_music"
                     />
                   </div>
-                  <span class="nav-section__link-text">Music</span>
+                  <span class="nav-section__link-text" data-hide>Music</span>
                 </a>
               </li>
               <li class="nav-section__nav-list-item">
@@ -171,7 +172,7 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_games"
                     />
                   </div>
-                  <span class="nav-section__link-text">Games</span>
+                  <span class="nav-section__link-text" data-hide>Games</span>
                 </a>
               </li>
               <li class="nav-section__nav-list-item">
@@ -183,12 +184,12 @@
                       class="nav-section__link-icon-img nav-section__link-icon-img_show-more"
                     />
                   </div>
-                  <span class="nav-section__link-text">Show more</span>
+                  <span class="nav-section__link-text" data-hide>Show more</span>
                 </a>
               </li>
             </ul>
           </nav>
-          <nav class="nav-section__subscriptions-nav">
+          <nav class="nav-section__subscriptions-nav" data-hide>
             <h3 class="nav-section__subscriptions-headline">Subscriptions</h3>
             <ul class="nav-section__subscriptions-nav-list">
               <li
@@ -273,7 +274,7 @@
                 class="nav-section__link-icon-img nav-section__link-icon-img_settings"
               />
             </div>
-            <span class="nav-section__link-text nav-section__link-text_light">
+            <span class="nav-section__link-text nav-section__link-text_light" data-hide>
               Setting
             </span>
           </a>
