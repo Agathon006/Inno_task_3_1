@@ -1,4 +1,6 @@
 @import "./navSection/navSection";
+@import "./personSection/personSection";
+@import "./smallVideoCard/smallVideoCard";
 
 .main {
   flex-grow: 1;
@@ -12,5 +14,18 @@
 
   @media (max-width: 480px) {
     padding: 10px 16px 77px;
+  }
+
+  &__main-content-section {
+    padding: 10px 0 0 10px;
+    overflow-x: auto;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+    
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 }

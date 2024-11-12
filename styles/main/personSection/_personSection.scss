@@ -1,0 +1,76 @@
+.person-section {
+  margin-bottom: 49px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (max-width: 480px) {
+    margin-bottom: 0;
+  }
+
+  &__btns-wrapper {
+    position: absolute;
+    top: 24px;
+    right: 149px;
+    display: flex;
+    column-gap: 10px;
+
+    @media (max-width: 1280px) {
+      right: 20px;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &__photo-link-wrapper {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    text-decoration: none;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+
+    .person-section__photo {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+
+    .person-section__name {
+      font-family: "Mulish";
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 33px;
+      color: #000000;
+    }
+  }
+
+  &__videos-block-wrapper {
+    width: 100%;
+
+    .person-section__videos-wrapper {
+      display: flex;
+      column-gap: 40px;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      
+      @media (max-width: 480px) {
+        flex-direction: column;
+        width: 100%;
+        row-gap: 30px;
+        overflow-x: visible;
+      }
+    }
+  }
+}
