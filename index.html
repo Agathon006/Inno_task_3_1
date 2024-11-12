@@ -3,9 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/youtube.ico" />
     <link rel="stylesheet" href="./styles/reset/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <title>Document</title>
+    <title>YouTube Redesign Concept</title>
   </head>
-  <body></body>
+  <body>
+    <div class="global-wrapper">
+      <header class="header">
+        <div class="header__left-wrapper">
+          <button class="header__burger-btn"></button>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            class="header__youtube-link"
+          ></a>
+          <div class="header__search-input-wrapper">
+            <input
+              type="search"
+              name="video-search"
+              placeholder="Search"
+              class="header__search-input"
+            />
+            <button class="header__input-search-btn"></button>
+          </div>
+        </div>
+        <div class="header__right-wrapper">
+          <div class="header__btns-wrapper">
+            <button class="header__btn-camera"></button>
+            <button class="header__btn-nine-dots"></button>
+            <button class="header__btn-bell">
+              <span class="header__bell-notifications">3</span>
+            </button>
+          </div>
+          <button class="header__btn-search"></button>
+          <button class="header__btn-profile"></button>
+        </div>
+      </header>
+      <main class="main"></main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
 </html>
