@@ -446,6 +446,48 @@ button {
   }
 }
 
+.rec-videos-section {
+  margin-bottom: 50px;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .rec-videos-section {
+    display: none;
+  }
+}
+.rec-videos-section__btns-wrapper {
+  position: absolute;
+  top: 5px;
+  right: 149px;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media (max-width: 1280px) {
+  .rec-videos-section__btns-wrapper {
+    right: 20px;
+  }
+}
+.rec-videos-section__headline {
+  font-family: "Mulish";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202c;
+  margin-bottom: 30px;
+}
+.rec-videos-section__videos-wrapper {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.rec-videos-section__videos-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .small-video-card {
   width: 250px;
   height: 200px;
@@ -519,6 +561,62 @@ button {
   font-family: "Mulish";
   font-size: 13px;
   line-height: 16px;
+  color: #c2c2c2;
+}
+
+.big-video-card {
+  width: 540px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.big-video-card__img-wrapper {
+  position: relative;
+  width: 540px;
+  height: 250px;
+  cursor: pointer;
+}
+.big-video-card__img-wrapper .big-video-card__img {
+  width: 540px;
+  height: 250px;
+  border-radius: 14px;
+}
+.big-video-card__video-headline {
+  padding-top: 10px;
+  font-family: "Mulish";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.big-video-card__additional-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.big-video-card__additional-info-wrapper .big-video-card__views-date-wrapper {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.big-video-card__additional-info-wrapper .big-video-card__views-date-wrapper .big-video-card__text-views {
+  font-family: "Mulish";
+  font-size: 12px;
+  line-height: 15px;
+  color: #c2c2c2;
+}
+.big-video-card__additional-info-wrapper .big-video-card__views-date-wrapper .big-video-card__text-date {
+  font-family: "Mulish";
+  font-size: 12px;
+  line-height: 15px;
+  color: #c2c2c2;
+}
+.big-video-card__additional-info-wrapper .big-video-card__text-author {
+  font-family: "Mulish";
+  font-size: 12px;
+  line-height: 15px;
   color: #c2c2c2;
 }
 

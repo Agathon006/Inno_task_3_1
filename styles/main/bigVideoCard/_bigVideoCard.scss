@@ -1,0 +1,62 @@
+.big-video-card {
+  width: 540px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+
+  &__img-wrapper {
+    position: relative;
+    width: 540px;
+    height: 250px;
+
+    .big-video-card__img {
+      width: 540px;
+      height: 250px;
+      border-radius: 14px;
+    }
+    cursor: pointer;
+  }
+
+  &__video-headline {
+    padding-top: 10px;
+    font-family: "Mulish";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202c;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  &__additional-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .big-video-card__views-date-wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+
+      .big-video-card__text-views {
+        font-family: "Mulish";
+        font-size: 12px;
+        line-height: 15px;
+        color: #c2c2c2;
+      }
+
+      .big-video-card__text-date {
+        font-family: "Mulish";
+        font-size: 12px;
+        line-height: 15px;
+        color: #c2c2c2;
+      }
+    }
+
+    .big-video-card__text-author {
+      font-family: "Mulish";
+      font-size: 12px;
+      line-height: 15px;
+      color: #c2c2c2;
+    }
+  }
+}
