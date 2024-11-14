@@ -6,11 +6,8 @@ export default () => {
 
   burgerButton.addEventListener("click", (e) => {
     elementsToHide.forEach((element) => {
-      if (element.style.display === "none") {
-        element.style.display = "block";
-      } else {
-        element.style.display = "none";
-      }
+      element.style.display =
+        element.style.display === "none" ? "block" : "none";
     });
   });
 };
